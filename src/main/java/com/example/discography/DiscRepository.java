@@ -17,6 +17,9 @@ public class DiscRepository {
         discsList.put(sampleDisc.getId(), sampleDisc);
     }
 
+    public DiscRepository(Disc discOne, Disc discTwo) {
+    }
+
     public Disc findOne(Long id) {return discsList.get(id);}
 
     public Collection<Disc> findAll() {return discsList.values();}

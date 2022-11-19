@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.annotation.Resource;
 
 @Controller
-public class DiscController {
+public class DiscsController {
 
     @Resource
     private DiscRepository discRepo;
