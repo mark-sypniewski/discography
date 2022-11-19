@@ -16,6 +16,10 @@ public class DiscRepositoryTest {
     private Disc discTwo = new Disc(2L, "discTwo artist", "discTwo album", "discTwo imageUrl",
             "discTwo category", "discTwo tracklist");
 
+    private Collection<Object> assertThat(Collection<Disc> foundDiscs) {
+    }
+
+
     @Test
     public void shouldFindDiscOne(){
         underTest = new DiscRepository(discOne);
@@ -27,8 +31,10 @@ public class DiscRepositoryTest {
     public void shouldFindDiscOneAndDiscTwo(){
         underTest = new DiscRepository(discOne, discTwo);
         Collection<Disc> foundDiscs = underTest.findAll();
-        assertThat(foundDiscs).contains(discOne, discTwo);
+        assertThat(foundDiscs).contains(discOne);
 
     }
+
+
 
 }

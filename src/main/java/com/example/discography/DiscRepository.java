@@ -20,6 +20,9 @@ public class DiscRepository {
     public DiscRepository(Disc discOne, Disc discTwo) {
     }
 
+    public DiscRepository(Disc discOne) {
+    }
+
     public Disc findOne(Long id) {return discsList.get(id);}
 
     public Collection<Disc> findAll() {return discsList.values();}
