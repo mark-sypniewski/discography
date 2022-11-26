@@ -7,14 +7,14 @@
 </head>
 <body>
 <header>
-    <img th:src="${discModel.imageUrl}"></img>
-    <h1 th:text="${discModel.album}"></h1>
+    <h1 th:text="${discModel.artist}"></h1>
 </header>
 
 <main>
     <ul>
         <p><a href="/discs">Discography</a></p>
-        <li th:text="${discModel.id}"></li>
+        <img th:src="${discModel.imageUrl}"></img>
+        <li th:text="${discModel.album}"></li>
     </ul>
     <h2 th:text="${discModel.album}"></h2>
 </main>
