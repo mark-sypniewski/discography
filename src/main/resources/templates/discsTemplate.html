@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Discography</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<header>
+    <img src="../images/banner_image.jpeg">
+    <h1>Discography</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="disc: ${discsModel}"><a th:href="@{/disc(id=${disc.id})}" th:text="${disc.artist}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy Mark Sypniewski 2022</small>
+</footer>
+</body>

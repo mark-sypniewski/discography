@@ -12,16 +12,12 @@ public class DiscRepository {
     Map<Long, Disc> discsList = new HashMap<>();
 
     public DiscRepository() {
-        Disc sampleDisc = new Disc(1234L, "sampleArtist", "sampleAlbum", "sampleImageUrl", "sampleCategory", "sampleTracklist");
+        Disc sampleDisc = new Disc(1234L, "sampleArtist", "sampleAlbum", "sampleImageUrl",
+                "sampleCategory", "sampleTracklist");
 
         discsList.put(sampleDisc.getId(), sampleDisc);
     }
 
-    public DiscRepository(Disc discOne, Disc discTwo) {
-    }
-
-    public DiscRepository(Disc discOne) {
-    }
 
     public Disc findOne(Long id) {return discsList.get(id);}
 
